@@ -66,3 +66,4 @@ package-lock.json
 *.drawio.bkp
 
 site/
+public/
