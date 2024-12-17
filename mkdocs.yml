@@ -3,15 +3,15 @@ site_url: https://github.com/hhhaiai/xyz
 
 edit_uri: edit/main/docs/
 
-nav:
-  - Home: index.md
-  - Info: info.md
-  - Test:
-      - Test Overview: test/index.md
-      - Subfolder:
-          - Subfile: test/subfolder/subfile.md
-          - Subfile: test/subfolder/subfile1.md
-      - Test One: test/test_one.md
+# nav:
+#   - Home: index.md
+#   - Info: info.md
+#   - Test:
+#       - Test Overview: test/index.md
+#       - Subfolder:
+#           - Subfile: test/subfolder/subfile.md
+#           - Subfile: test/subfolder/subfile1.md
+#       - Test One: test/test_one.md
 
 theme:
   name: material
