@@ -1,0 +1,18 @@
+site_name: MyBlog
+site_url: https://github.com/hhhaiai/xyz
+
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+
