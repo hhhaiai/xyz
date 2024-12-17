@@ -1,12 +1,69 @@
-site_name: MyBlog
+site_name: sanbo技术文档集锦
 site_url: https://github.com/hhhaiai/xyz
 
 edit_uri: edit/main/docs/
 
+nav:
+  - Home: index.md
+  - Info: info.md
+  - Test:
+      - Test Overview: test/index.md
+      - Subfolder:
+          - Subfile: test/subfolder/subfile.md
+          - Subfile: test/subfolder/subfile1.md
+      - Test One: test/test_one.md
+
 theme:
   name: material
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+# If you have custom static files, they can be included here (optional)
+extra_css:
+  - 'stylesheets/extra.css'
+
+extra_javascript:
+  - 'javascripts/extra.js'
 
 markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_alt
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - toc:
       permalink: true
   - pymdownx.superfences:
@@ -15,4 +72,4 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-
+  
